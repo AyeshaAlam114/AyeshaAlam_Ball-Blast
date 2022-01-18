@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd976ef39bd8bc4cb1bec739b10db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBoundary: 18
+  maxBoundary: 22
