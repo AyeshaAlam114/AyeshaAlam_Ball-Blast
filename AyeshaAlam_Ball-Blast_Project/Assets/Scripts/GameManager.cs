@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
         Physics.gravity *= gravityModifier;                                                                                 //modify the project's gravity for smoother bounce effect
     }
 
+    public void ResetGravity()
+    {
+        Physics.gravity = new Vector3(0,-9.81f, 0);
+    }
+
     public void GameOver()
     {
         gameOver = true;                                                                                                    //set boolean to over state          
@@ -47,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        ResetGravity();
         Time.timeScale = 1;                                                                                                //Time is set to 1 that it impacts that game is in running state
         SceneManager.LoadScene(0);                                                                                         //load the scene of 0 index in build settings
     }
